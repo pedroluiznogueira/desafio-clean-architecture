@@ -1,0 +1,12 @@
+### Create an order (populates the database)
+POST http://localhost:8000/order HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "a",
+    "price": 100.5,
+    "tax": 0.5
+}
+
+### List orders (validates the challenge)
+GET http://localhost:8000/order HTTP/1.1
